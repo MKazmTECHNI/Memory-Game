@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+
+    <link rel="stylesheet" href="./index.css" />
+
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <div class="game-settings">
+      <p>
+        Choose how much tiles you want to play with! (<span class="table-size"
+          >Apparently Error Occured</span
+        >)
+      </p>
+      <input class="tiles-amount-input" type="number" />
+      <button class="tiles-amount-button">Submit And Play!</button>
+    </div>
+    <div class="game-container">
+      <div class="stats">
+        <p>Moves Made: <span class="moves">0</span></p>
+        <p>Tiles Matched: <span class="pairs">0</span></p>
+      </div>
+      <div class="game"></div>
+      <button class="reset">Reset Game</button>
+    </div>
+    <p class="result-message">mesedż</p>
+  </body>
+</html>
