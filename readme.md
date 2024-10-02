@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # Simple Memory game to copy paste
 
 Originally for school project, but decided to upgrade it and paste into my github in case anyone would be looking for simple copy paste minigame.
@@ -23,4 +21,4 @@ But if you do:
 
 ---
 
-# Author: MKazm
+Author: MKazm
