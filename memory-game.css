@@ -1,11 +1,10 @@
-/* Po co  wrzucać całego reseta, skoro tyle mi wystarczy */
-* {
+/* Its basically whole reset.css */
+.whole-memory-game * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-/* A reszta pięknie */
 
 :root {
   --backgound-color: #1b1b1b;
@@ -20,7 +19,7 @@ body {
   color: var(--inner-color);
 }
 
-div.game-settings {
+div.memory-game-settings {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -31,19 +30,22 @@ div.game-settings {
   padding: 12px;
 }
 
-input.tiles-amount-input {
+.memory-tiles-amount-input {
   width: 77px;
   text-align: center;
   border-radius: 14px;
-  padding: 7px;
+  padding: 10px;
 }
 
-button.tiles-amount-button {
-  padding: 7px;
+.memory-tiles-amount-button {
+  padding: 10px;
   border-radius: 14px;
+  background-color: #1b1b1b;
+  color: #dcdcdc;
+  border: 1px solid #fff;
 }
 
-div.stats {
+.memory-stats {
   background: var(--containers-color);
   display: flex;
   justify-content: center;
@@ -54,7 +56,7 @@ div.stats {
   border-radius: 14px;
 }
 
-.game-container {
+.memory-game-container {
   position: relative;
   display: flex;
   justify-content: center;
@@ -64,7 +66,7 @@ div.stats {
   padding: 42px 63px;
 }
 
-.game {
+.memory-game {
   background: var(--containers-color);
   width: 49vw;
 
@@ -76,7 +78,7 @@ div.stats {
   padding: 14px;
 }
 
-.tile {
+.memory-tile {
   background: var(--inner-color);
   min-width: 10vw;
   aspect-ratio: 1/1; /* To wgl jest świetne, czemu się tego dopiero nauczyłem */
@@ -89,7 +91,7 @@ div.stats {
   transition: 0.25s;
 }
 
-.tile::after {
+.memory-tile::after {
   content: " ";
   position: absolute;
   inset: 0;
@@ -98,7 +100,7 @@ div.stats {
   opacity: 1;
 }
 
-button.reset {
+.memory-reset {
   color: var(--backgound-color);
   padding: 14px;
   border-radius: 14px;
@@ -106,27 +108,27 @@ button.reset {
   letter-spacing: 0.7px;
 }
 
-.selected {
+.memory-selected {
   transition: 0.56s;
   z-index: 7;
 }
-.selected::after {
+.memory-selected::after {
   /* content: none; */
   opacity: 0;
   transition: 0.35s;
 }
-.shown {
+.memory-shown {
   transition: 0.56s;
   scale: 1.056;
   background-color: #ababab;
 }
-.shown::after {
+.memory-shown::after {
   /* content: none; */
   opacity: 0;
   transition: 0.35s;
 }
 
-p.result-message {
+p.memory-result-message {
   color: var(--inner-color);
   font-weight: bolder;
   letter-spacing: 1px;
@@ -136,10 +138,10 @@ p.result-message {
 }
 
 @media only screen and (max-width: 525px) {
-  .game {
+  .memory-game {
     width: 93vw;
   }
-  .tile {
+  .memory-tile {
     font-size: 2em;
     flex: 0 0;
   }
@@ -147,6 +149,6 @@ p.result-message {
     font-size: 1.25em;
   }
   input {
-    font-size: 2em;
+    font-size: 1.75em;
   }
 }
